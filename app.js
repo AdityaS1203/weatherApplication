@@ -29,7 +29,8 @@ app.post("/",function(req,res){
            const icon=values.weather[0].icon;
            const description=values.weather[0].description;
            const imgURL="http://openweathermap.org/img/wn/"+ icon +"@2x.png";
-           res.write("<p>Current weather is "+description+"</p>");
+           res.write("<style>h1{text-align: center;margin:0 0 0 0;}h3{text-align: center;margin:12% 0 2% 0;}img{display:block;margin: 0 auto 0 auto;}</style>")
+           res.write("<h3>Current weather is "+description+"</h3>");
            res.write("<h1>Temperature in "+c+" is "+temperature+" (in celcius)</h1>");
            res.write("<img src="+ imgURL + ">");
            res.send();
