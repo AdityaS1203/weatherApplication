@@ -8,6 +8,7 @@ body{
 }
 .span{
   text-align:left;
+  visibility:hidden;
 }
 .city{
   border:1px;
