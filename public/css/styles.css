@@ -5,6 +5,7 @@ body{
   color: black;
   background-image:url("images/weather.jfif");
   overflow-y:hidden;
+  margin:0;
 }
 .span{
   text-align:left;
